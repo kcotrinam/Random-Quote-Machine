@@ -23,8 +23,10 @@ const Quote = () => {
         <div className="container" id="quote-box">
           <QuoteText quote={quoteInfo.quote} />
           <AuthorText author={quoteInfo.author} />
-          <NextQuoteButton clickHandler={nextQuote} />
-          <a href="twitter.com/intent/tweet" id="tweet-quote">Tweet quote</a>
+          <div className="buttons-container">
+            <a href="https://twitter.com/intent/tweet" target="_blank" id="tweet-quote">Tweet quote</a>
+            <NextQuoteButton clickHandler={nextQuote} />
+          </div>
         </div>
       </div>
     </>

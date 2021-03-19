@@ -5,7 +5,7 @@ const App = () => {
 
   return(
     <>
-      <h1>Welcome to React Template!!!</h1>
+      <h1>Random Quote</h1>
       <Joke />
     </>
   )
