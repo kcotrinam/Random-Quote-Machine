@@ -1,0 +1,26 @@
+body {
+	background: url('./../images/prueba.png') center center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.container {
+	color: white;
+	background-color: hsla(0, 0, 0, 0.75);
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1.2rem;
+}
+
+.joke-container {
+	font-size: 2rem;
+}
+
+.button-container {
+	display: flex;
+	justify-content: flex-end;
+}
