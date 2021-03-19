@@ -1,5 +1,6 @@
 {
-  "name": "webpackTemplate",
+  "homepage":"https://kcotrinam.github.io/Random-Quote-Machine",
+  "name": "Random-Quote-Machine",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
