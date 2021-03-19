@@ -8,7 +8,7 @@ const requestQuote = async (setQuote) => {
       author: json.quotes[0].author
     })
   } catch (e) {
-    throw Error(`Error: ${e}`)
+    throw Error(`Error found: ${e}`)
   }
 
 }
