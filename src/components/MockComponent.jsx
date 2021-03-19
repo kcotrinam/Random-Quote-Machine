@@ -1,24 +1,30 @@
 import { useEffect, useState } from "react";
-import NextJokeBtn from "./NextBtn";
-import requestJoke from "./services/ApiRequest";
+import NextQuoteButton from "./NextBtn";
+import requestQuote from "./services/ApiRequest";
+import QuoteText from "./QuoteText"
 
 const Joke = () => {
-  const [joke, setJoke] = useState('')
+  const [quoteInfo, setQuoteInfo] = useState({
+    quote: '',
+    author: ''
+  })
   useEffect(() => {
-    requestJoke(setJoke)
+    requestQuote(setQuoteInfo)
   }, [])
 
-  const nextJoke = () => {
-    requestJoke(setJoke)
+  const nextQuote = () => {
+    requestQuote(setQuoteInfo)
   }
 
-  return(
+  return (
     <>
-      <div className="container">
-        <div className="joke-container">{joke}</div>
-      </div>
-      <div className="button-container">
-        <NextJokeBtn clickHandler={nextJoke}/>
+      <div >
+        <div className="container" id="quote-box">
+          <QuoteText quote={quoteInfo.quote} />
+          <div className="joke-container" id="author">{quoteInfo.author}</div>
+          <NextQuoteButton clickHandler={nextQuote} />
+          <a href="twitter.com/intent/tweet" id="tweet-quote">Tweet quote</a>
+        </div>
       </div>
     </>
   )

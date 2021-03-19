@@ -1,10 +1,10 @@
-const NextJokeBtn = ({clickHandler}) => {
+const NextQuoteButton = ({clickHandler}) => {
 
   return(
     <>
-      <button onClick={clickHandler}>Next Joke</button>
+      <button id="new-quote" onClick={clickHandler}>Next Quote</button>
     </>
   )
 }
 
-export default NextJokeBtn;
+export default NextQuoteButton;
